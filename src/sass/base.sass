@@ -1,0 +1,25 @@
+@use "variables"
+@use "section-banner.sass"
+@use "section-one.sass"
+@use "model.sass"
+@use "footer.sass"
+
+*, *::before, *::after
+    margin: 0
+    padding: 0
+    box-sizing: border-box
+    text-decoration: none
+
+body
+    font-family: variables.$font-regular, sans-serif
+    height: 100vh
+
+    &.popup-active
+        overflow: hidden
+        z-index: 0
+    &.popup-inactive
+        overflow: auto
+        z-index: 100
+    main
+        display: flex
+        flex-direction: column
