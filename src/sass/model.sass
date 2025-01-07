@@ -2,7 +2,6 @@
 @use "model-mixin"
 
 .model-section
-    height: 633px
     width: 100%
     display: flex
     position: relative
@@ -29,14 +28,12 @@
         @include model-mixin.model-highlight-content
 
         &.accessories
-            left: 38%
+            left: -1px
 
         &.video
-            left: 4rem
-            bottom: 4rem
-            padding: 0
             gap: 24px
             height: auto
+            width: fit-content
             align-items: flex-start
 
             .model-highlight-heading
@@ -48,3 +45,142 @@
 
         .model-highlight-buttons
             @include model-mixin.model-highlight-buttons
+
+@media screen and (min-width: 320px)
+    .model-section
+        height: 506px
+
+        figure
+            img
+                &.img-desktop
+                    display: none
+                &.img-mobile
+                    display: block
+
+        .model-highlight-content
+            left: 0
+            padding: 24px
+            width: 100%
+
+            &.video
+                left: 0
+                bottom: 0
+                width: 100%
+                padding: 24px
+                padding-top: 0
+
+                .model-highlight-heading
+                    h1
+                        font-size: 28px
+                        width: fit-content
+
+                .model-highlight-buttons
+                    width: 100%
+
+                    button
+                        width: 100%
+
+            .model-highlight-heading
+                h1
+                    font-size: 48px
+
+                div
+                    a
+                        font-size: 34px
+                        text-align: center
+
+                    h2.model-s-description, p.model-s-price
+                        text-align: center
+
+                    h2.model-s-description
+                        font-size: 34px
+
+                    h2.cybertruck-price
+                        text-align: center
+                        font-size: 14px
+
+                    h2.solar-roof-tagline
+                        text-align: center
+
+            .model-highlight-buttons
+                width: 100%
+                gap: 8px
+
+                button
+                    width: 100%
+
+@media screen and (min-width: 768px)
+    .model-section
+        height: 526px
+
+        figure
+            img
+                &.img-desktop
+                    display: block
+                &.img-mobile
+                    display: none
+
+        .model-highlight-content
+            &.video
+                margin-left: 48px
+                margin-bottom: 36px
+                padding: 0
+                width: fit-content
+
+                .model-highlight-heading
+                    h1
+                        font-size: 28px
+                        width: fit-content
+
+                .model-highlight-buttons
+                    width: 100%
+
+                    button
+                        width: 8rem
+
+            .model-highlight-heading
+
+                div
+                    h2.cybertruck-price
+                        text-align: center
+                        font-size: 17px
+
+            .model-highlight-buttons
+                width: 284px
+                gap: 1.5rem
+
+                button
+                    width: 100%
+
+@media screen and (min-width: 1024px)
+    .model-section
+        height: 633px
+
+        .model-highlight-content
+            padding-top: 4rem
+            padding-bottom: 2rem
+
+            &.video
+                left: 4rem
+                bottom: 10rem
+                margin: 0
+                padding: 0
+                width: fit-content
+
+                .model-highlight-heading
+                    h1
+                        font-size: 40px
+                        width: fit-content
+
+                .model-highlight-buttons
+                    width: 100%
+
+                    button
+                        width: 90%
+
+            .model-highlight-buttons
+                width: auto
+                gap: 1.5rem
+
+                button
+                    width: 264px

@@ -1,7 +1,6 @@
 @use "variables"
 
 footer
-    padding: 48px
     margin-bottom: 2rem
     font-size: 12px
     color: #5c5e62
@@ -10,6 +9,7 @@ footer
     flex-direction: column
     justify-content: center
     align-items: center
+    width: 100%
     gap: 40px
 
     &#footer-fixed
@@ -29,7 +29,6 @@ footer
         a
             font-family: variables.$font-medium, sans-serif
             width: fit-content
-            font-size: 17px
             color: #171a20
             display: flex
             gap: 8px
@@ -42,7 +41,6 @@ footer
                     height: 1.5rem
 
     .footer-wrapper-one
-        width: 38rem
         display: flex
         flex-direction: column
         gap: 1rem
@@ -81,3 +79,49 @@ footer
 
                 a
                     color: inherit
+
+@media screen and (min-width: 320px)
+    footer
+        padding: 40px 12px
+
+        &#footer-fixed
+            a
+                font-size: 14px
+
+        .footer-wrapper-one
+            width: 100%
+            margin-bottom: 120px
+
+        .footer-wrapper-two
+            ul
+                flex-direction: column
+                li
+                    text-align: center
+
+@media screen and (min-width: 768px)
+    footer
+        .footer-wrapper-one
+            width: 80%
+            margin: 0
+
+        &#footer-fixed
+            a
+                font-size: 17px
+
+        .footer-wrapper-two
+            ul
+                padding: 1rem 0
+                flex-direction: row
+                li
+                    text-align: start
+
+@media screen and (min-width: 1024px)
+    footer
+        padding: 48px
+
+        .footer-wrapper-one
+            width: 38rem
+
+        .footer-wrapper-two
+            ul
+                padding: 0

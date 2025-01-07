@@ -2,17 +2,13 @@ section#section-banner
     padding: 16px 24px
     position: fixed
     z-index: 99
-    width: 100%
     background-color: #f4f4f4
-    height: 52px
     display: flex
-    justify-content: center
 
     p
         color: #393c41
-        font-size: 14px
 
-        span
+        a
             color: inherit
             cursor: pointer
             text-decoration: none
@@ -24,65 +20,61 @@ section#section-banner
                 width: 100%
                 position: absolute
                 background-color: black
-                bottom: -3px
                 left: 0px
                 transition: height .2s ease-in
 
             &:hover::after
                 height: 2px
 
-    .overlay
-        position: fixed
-        backdrop-filter: blur(4px)
-        inset: 0
-        transition: height width .2s ease-in-out
+@media screen and (min-width: 320px)
+    section#section-banner
+        width: 100%
+        height: auto
+        justify-content: flex-start
 
-        &.active
-            height: 100vh
-            width: 100vw
-            z-index: 100
+        p
+            font-size: 12px
+            line-height: 1.2rem
 
-        &.inactive
-            height: 0
-            width: 0
-            z-index: 0
+            a
+                &::after
+                    bottom: 0px
 
-        .modal
-            position: absolute
-            height: 374px
-            width: 772px
-            background-color: #fff
-            border-radius: 14px
-            gap: 1rem
-            display: flex
-            transition: transform .2s ease-in-out
-            flex-direction: column
+@media screen and (min-width: 375px)
+    section#section-banner
+        p
+            a
+                display: block
+                font-size: 12px
+                width: fit-content
 
-            &.active
-                transform: translateX(37%) translateY(40%)
+                &::after
+                    bottom: 2px
 
-            &.inactive
-                transform: translate(37%, 200%)
+@media screen and (min-width: 768px)
+    section#section-banner
+        height: 72px
 
-            .modal-heading
-                align-self: flex-end
-                padding: 1rem
+        p
+            font-size: 14px
+            line-height: 100%
 
-                svg
-                    fill: #393c41
-                    height: 24px
-                    cursor: pointer
+            a
+                font-size: 12px
+                margin-top: 8px
 
-            .modal-content
-                display: flex
-                gap: 8px
-                flex-direction: column
-                padding: 48px
+                &::after
+                    bottom: 0px
 
-                h2
-                    color: #171a20
-                    font-size: 28px
+@media screen and (min-width: 1024px)
+    section#section-banner
+        height: 52px
+        justify-content: center
 
-                p
-                    color: #393c41
-                    font-size: 14px
+        p
+            a
+                display: inline
+                font-size: inherit
+
+                &::after
+                    bottom: -3px

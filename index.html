@@ -11,59 +11,22 @@
     <title>Electric Cars, Solar & Clean Energy | Tesla</title>
     <link rel="stylesheet" href="src/css/base.css" />
   </head>
-  <body class="popup-inactive">
+  <body>
     <div id="app">
       <main>
         <section id="section-banner">
           <p>
-            Receive free Supercharging when you purchase a new Model S.
-            <span class="learn-more">Learn More</span>
+            For a limited time, receive free Supercharging when you purchase a
+            new Foundation Series Cybertruck.
+            <a href="https://www.tesla.com/inventory/new/ct" class="learn-more"
+              >Explore Inventory</a
+            >
           </p>
-          <div class="overlay inactive">
-            <div class="modal inactive">
-              <div class="modal-heading">
-                <svg
-                  class="modal-close-button"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke-width="1.5"
-                  stroke="currentColor"
-                  class="size-6"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18 18 6M6 6l12 12"
-                  />
-                </svg>
-              </div>
-              <div class="modal-content">
-                <h2>Free Supercharging</h2>
-                <p>
-                  Customers who purchase or lease a new Model S are eligible for
-                  free Supercharging during your ownership of the vehicle. Order
-                  must be placed on or after December 13, 2024. Offer is tied to
-                  your Tesla Account and cannot be transferred to another
-                  vehicle, person or order, even in the case of ownership
-                  transfer. Used vehicles, business orders and vehicles used for
-                  commercial purposes (like taxi, rideshare and delivery
-                  services) are excluded from this promotion. You are still
-                  responsible for Supercharger fees, like idle and congestion
-                  fees, when applicable. Stackable with other promotions. Tesla
-                  reserves the right in its sole discretion to remove the free
-                  Supercharging from your vehicle in the event of excessive
-                  charging or unpaid fees related to Supercharging. Promotion
-                  subject to change or end at any time.
-                </p>
-              </div>
-            </div>
-          </div>
         </section>
         <section id="section-one">
           <header>
             <h1>
-              <a href="/">
+              <a href="https://www.tesla.com/">
                 <svg
                   class="tds-icon tds-icon-logo-wordmark tds-site-logo-icon"
                   viewBox="0 0 342 35"
@@ -87,7 +50,7 @@
             </nav>
             <ul>
               <li>
-                <a href="/"
+                <a href="https://www.tesla.com/"
                   ><svg
                     class="tds-icon tds-icon-help"
                     viewBox="0 0 24 24"
@@ -101,7 +64,7 @@
                 </a>
               </li>
               <li>
-                <a href="/"
+                <a href="https://www.tesla.com/"
                   ><svg
                     class="tds-icon tds-icon-globe"
                     viewBox="0 0 24 24"
@@ -115,7 +78,7 @@
                 </a>
               </li>
               <li>
-                <a href="/">
+                <a href="https://www.tesla.com/">
                   <svg
                     class="tds-icon tds-icon-person"
                     viewBox="0 0 24 24"
@@ -129,12 +92,20 @@
                 </a>
               </li>
             </ul>
+            <button class="mobile-menu-btn">Menu</button>
           </header>
           <figure>
             <img
               src="/images/Homepage-APR-Promo-Hero-Desktop-v3.avif"
-              alt="Image of Tesla Model S"
+              alt="Image of Tesla Model"
               loading="lazy"
+              class="hero-desktop"
+            />
+            <img
+              src="/images/Homepage-APR-Promo-Hero-Mobile-v3.avif"
+              alt="Image of Tesla Model"
+              loading="lazy"
+              class="hero-mobile"
             />
           </figure>
           <div class="hero-heading-one">
@@ -155,6 +126,13 @@
               src="/images/Homepage-Model-Y-Desktop-US-v2.avif"
               alt="Image of Tesla Model Y"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Model-Y-Mobile-US-v2.avif"
+              alt="Image of Tesla Model Y"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -181,6 +159,13 @@
               src="/images/Homepage-Model-3-Desktop-US.avif"
               alt="Image of Tesla Model 3"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Model-3-Mobile-US.avif"
+              alt="Image of Tesla Model 3"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -207,6 +192,13 @@
               src="/images/Homepage-Model-X-Desktop-US.avif"
               alt="Image of Tesla Model X"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Model-X-Mobile-US.avif"
+              alt="Image of Tesla Model X"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -235,6 +227,13 @@
               src="/images/Homepage-Model-S-Desktop-US.avif"
               alt="Image of Tesla Model S"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Model-S-Mobile-US.avif"
+              alt="Image of Tesla Model S"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -266,6 +265,13 @@
               src="/images/Homepage-Cybertruck-Desktop-v3.avif"
               alt="Image of Tesla Cybertruck"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Cybertruck-Mobile-v3.avif"
+              alt="Image of Tesla Cybertruck"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -2137,6 +2143,13 @@
               src="/images/Homepage-SolarPanels-01-Desktop.avif"
               alt="Image of Tesla Solar Panels"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-SolarPanels-01-Mobile.avif"
+              alt="Image of Tesla Solar Panels"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -2164,6 +2177,13 @@
               src="/images/Homepage-SolarRoof-Desktop-US.avif"
               alt="Image of Tesla Solar Roof"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-SolarRoof-Mobile-US.avif"
+              alt="Image of Tesla Solar Roof"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -2191,6 +2211,13 @@
               src="/images/Homepage-Powerwall-Desktop-US.avif"
               alt="Image of Tesla Powerwall"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Powerwall-Mobile-US.avif"
+              alt="Image of Tesla Powerwall"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content">
@@ -2213,6 +2240,13 @@
               src="/images/Homepage-Accessories-Desktop-US.avif"
               alt="Image of Tesla Accessories"
               loading="lazy"
+              class="img-desktop"
+            />
+            <img
+              src="/images/Homepage-Accessories-Mobile-US.avif"
+              alt="Image of Tesla Accessories"
+              loading="lazy"
+              class="img-mobile"
             />
           </figure>
           <div class="model-highlight-content accessories">
